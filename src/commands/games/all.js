@@ -1,7 +1,8 @@
 const { allGames } = require('../../fetchers/games');
 const runWithSpinner = require('../../utils/run-with-spinner');
 const formatOutput = require('../../utils/format-output');
-const { Command, flags } = require('@oclif/command');
+const gamesOptions = require('../../utils/games-options');
+const { Command } = require('@oclif/command');
 
 class AllCommand extends Command {
   async run() {
@@ -29,12 +30,6 @@ Color coding:
 - red means it is a future game
 `;
 
-AllCommand.flags = {
-  'game-site': flags.boolean({
-    char: 's',
-    description: 'Whether or not to show a link to the game site',
-    default: false,
-  }),
-};
+AllCommand.flags = gamesOptions;
 
 module.exports = AllCommand;
