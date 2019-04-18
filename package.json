@@ -10,7 +10,9 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@oclif/plugin-help": "^2"
+    "@oclif/plugin-help": "^2",
+    "chalk": "^2.4.2",
+    "cli-ux": "^5.2.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
