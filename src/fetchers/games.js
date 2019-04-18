@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const { isPastGame } = require('../utils/index');
+const isPastGame = require('../utils/is-past-game');
 
 async function fetchDataFromConmebol() {
   const browser = await puppeteer.launch();
@@ -33,7 +33,10 @@ async function fetchDataFromConmebol() {
         parsed.teamTwo = matchElements[7].textContent;
         parsed.teamTwoResult = matchElements[5].textContent.trim();
 
-        if (isPastGame(parsed)) {
+        if (
+          parsed.teamOneResult.length > 0 &&
+          parsed.teamTwoResult.length > 0
+        ) {
           parsed.gameSite = matchElements[10].children[0].href;
         }
       }

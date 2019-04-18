@@ -12,7 +12,8 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "chalk": "^2.4.2",
-    "cli-ux": "^5.2.1"
+    "cli-ux": "^5.2.1",
+    "puppeteer": "^1.14.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
