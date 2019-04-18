@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const isPastGame = require('./is-past-game');
 
-module.exports = function formatOutput(data, flags) {
+module.exports = function formatOutput(data, flags = {}) {
   const { 'game-site': showGameSite } = flags;
 
   if (data.isHeader) {

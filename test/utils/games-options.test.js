@@ -4,14 +4,10 @@ const gamesOptions = require('../../src/utils/games-options');
 
 describe('gamesOptions', () => {
   it('returns correct gamesOptions object', () => {
-    const options = {
-      'game-site': flags.boolean({
-        char: 's',
-        description: 'Whether or not to show a link to the game site',
-        default: false,
-      }),
-    };
-
-    expect(JSON.stringify(gamesOptions)).to.deep.equal(JSON.stringify(options));
+    expect(gamesOptions['game-site'].char).to.equal('s');
+    expect(gamesOptions['game-site'].description).to.equal(
+      'Whether or not to show a link to the game site'
+    );
+    expect(gamesOptions['game-site'].default).to.equal(false);
   });
 });
