@@ -31,6 +31,7 @@ USAGE
 <!-- commands -->
 * [`libertadores games:all`](#libertadores-gamesall)
 * [`libertadores games:past`](#libertadores-gamespast)
+* [`libertadores games:upcoming`](#libertadores-gamesupcoming)
 * [`libertadores help [COMMAND]`](#libertadores-help-command)
 
 ## `libertadores games:all`
@@ -55,11 +56,25 @@ _See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-
 
 ## `libertadores games:past`
 
-Describe the command here
+Retrieves all the past games for the "Copa Libertadores"
 
 ```
 USAGE
   $ libertadores games:past
+
+OPTIONS
+  -s, --game-site  Whether or not to show a link to the game site
+```
+
+_See code: [src/commands/games/past.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/past.js)_
+
+## `libertadores games:upcoming`
+
+Describe the command here
+
+```
+USAGE
+  $ libertadores games:upcoming
 
 OPTIONS
   -n, --name=name  name to print
@@ -69,7 +84,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/games/past.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/past.js)_
+_See code: [src/commands/games/upcoming.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/upcoming.js)_
 
 ## `libertadores help [COMMAND]`
 
