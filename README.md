@@ -29,16 +29,16 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`libertadores hello`](#libertadores-hello)
+* [`libertadores games:all`](#libertadores-gamesall)
 * [`libertadores help [COMMAND]`](#libertadores-help-command)
 
-## `libertadores hello`
+## `libertadores games:all`
 
 Describe the command here
 
 ```
 USAGE
-  $ libertadores hello
+  $ libertadores games:all
 
 OPTIONS
   -n, --name=name  name to print
@@ -48,7 +48,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/hello.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/hello.js)_
+_See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/all.js)_
 
 ## `libertadores help [COMMAND]`
 
