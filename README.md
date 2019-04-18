@@ -30,15 +30,36 @@ USAGE
 # Commands
 <!-- commands -->
 * [`libertadores games:all`](#libertadores-gamesall)
+* [`libertadores games:past`](#libertadores-gamespast)
 * [`libertadores help [COMMAND]`](#libertadores-help-command)
 
 ## `libertadores games:all`
+
+Retrieves all the games for the "Copa Libertadores"
+
+```
+USAGE
+  $ libertadores games:all
+
+OPTIONS
+  -s, --game-site  Whether or not to show a link to the game site
+
+DESCRIPTION
+  Color coding:
+
+  - green means it has already been played
+  - red means it is a future game
+```
+
+_See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/all.js)_
+
+## `libertadores games:past`
 
 Describe the command here
 
 ```
 USAGE
-  $ libertadores games:all
+  $ libertadores games:past
 
 OPTIONS
   -n, --name=name  name to print
@@ -48,7 +69,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/all.js)_
+_See code: [src/commands/games/past.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/past.js)_
 
 ## `libertadores help [COMMAND]`
 
