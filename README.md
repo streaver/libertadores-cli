@@ -32,7 +32,7 @@ In South America, where we are from, soccer is a passion and everyone goes crazy
 ## Preview
 
 <div align="center">
-  <img height="300px" src="https://user-images.githubusercontent.com/7522836/56519546-b44bd580-6518-11e9-8700-b28da7a50834.gif" />
+  <img height="300px" src="https://user-images.githubusercontent.com/7522836/56519757-3fc56680-6519-11e9-8a79-4e47d9856184.gif" />
 </div>
 
 
