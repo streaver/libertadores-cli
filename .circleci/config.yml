@@ -17,12 +17,29 @@ jobs:
       - run: ./bin/run --version
       - run: ./bin/run --help
       - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
           name: Testing
-          command: yarn test
-  node-8:
-    <<: *test
-    docker:
-      - image: node:8
+          command: |
+            mkdir /tmp/test-results
+            ./cc-test-reporter before-build
+            yarn test
+            yarn report
+      - run:
+          name: Code Climate Test Coverage
+          command: |
+            ./cc-test-reporter format-coverage -t lcov -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+      - store_test_results:
+          path: /tmp/test-results
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
+      - deploy:
+          command: |
+            ./cc-test-reporter sum-coverage --output - --parts $CIRCLE_NODE_TOTAL coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
   node-10:
     <<: *test
     docker:
@@ -43,10 +60,9 @@ jobs:
 
 workflows:
   version: 2
-  "libertadores-cli":
+  'libertadores-cli':
     jobs:
       - node-latest
-      - node-8
       - node-10
       - cache:
           filters:

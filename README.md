@@ -1,13 +1,34 @@
 libertadores-cli
 ================
 
-A simple CLI to get information about &#34;Copa Libertadores&#34; right in your terminal
+<div align="center">
+  <p align="center">A simple CLI to get information about "Copa Libertadores" right in your terminal!</p>
+  <img src="https://user-images.githubusercontent.com/7522836/56518337-8d3fd480-6515-11e9-8abf-da6ee9b33f84.png" />
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/libertadores-cli.svg)](https://npmjs.org/package/libertadores-cli)
-[![CircleCI](https://circleci.com/gh/streaver/libertadores-cli/tree/master.svg?style=shield)](https://circleci.com/gh/streaver/libertadores-cli/tree/master)
-[![Downloads/week](https://img.shields.io/npm/dw/libertadores-cli.svg)](https://npmjs.org/package/libertadores-cli)
-[![License](https://img.shields.io/npm/l/libertadores-cli.svg)](https://github.com/streaver/libertadores-cli/blob/master/package.json)
+  <p align="center">
+    <a href="https://npmjs.org/package/libertadores-cli">
+      <img src="https://img.shields.io/npm/v/libertadores-cli.svg" />
+    </a>
+    <a href="https://oclif.io">
+      <img src="https://img.shields.io/badge/cli-oclif-brightgreen.svg" />
+    </a>
+    <a href="https://circleci.com/gh/streaver/libertadores-cli/tree/master">
+      <img src="https://circleci.com/gh/streaver/libertadores-cli/tree/master.svg?style=shield" />
+    </a>
+    <a href="https://codeclimate.com/github/streaver/libertadores-cli/maintainability">
+      <img src="https://api.codeclimate.com/v1/badges/06419a751b601e5afb4d/maintainability" />
+    </a>
+    <a href="https://codeclimate.com/github/streaver/libertadores-cli/test_coverage">
+      <img src="https://api.codeclimate.com/v1/badges/06419a751b601e5afb4d/test_coverage" />
+    </a>
+    <a href="https://github.com/streaver/libertadores-cli/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/streaver/libertadores-cli.svg" />
+    </a>
+  </p>
+</div>
+
+
+In South America, where we are from, soccer is a passion and everyone goes crazy when the "Copa Libertadores" is going on so we built this CLI to get some information about it! Checkout our article about building awesome CLIs: [Building awesome CLIs with JavaScript and Oclif](https://www.streaver.com/blog/posts/building-CLIs-with-javascript-and-oclif.html)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -70,18 +91,11 @@ _See code: [src/commands/games/past.js](https://github.com/streaver/libertadores
 
 ## `libertadores games:upcoming`
 
-Describe the command here
+Retrieves all the upcoming games for the "Copa Libertadores"
 
 ```
 USAGE
   $ libertadores games:upcoming
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
 ```
 
 _See code: [src/commands/games/upcoming.js](https://github.com/streaver/libertadores-cli/blob/v0.0.0/src/commands/games/upcoming.js)_
