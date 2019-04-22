@@ -27,8 +27,16 @@ libertadores-cli
   </p>
 </div>
 
-
 In South America, where we are from, soccer is a passion and everyone goes crazy when the "Copa Libertadores" is going on so we built this CLI to get some information about it! Checkout our article about building awesome CLIs: [Building awesome CLIs with JavaScript and Oclif](https://www.streaver.com/blog/posts/building-CLIs-with-javascript-and-oclif.html)
+
+## Preview
+
+<div align="center">
+  <img height="300px" src="https://user-images.githubusercontent.com/7522836/56519247-f9bbd300-6517-11e9-88ce-6cf98232be53.gif" />
+</div>
+
+
+## Table of Content
 
 <!-- toc -->
 * [Usage](#usage)
@@ -117,3 +125,9 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 <!-- commandsstop -->
+
+## Contributing
+
+All contributions or issue reporting are welcomed. If you are filing a bug please include information to help debug it!
+
+If you plan to contribute, please make sure you test the code.
