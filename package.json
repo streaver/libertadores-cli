@@ -1,7 +1,7 @@
 {
   "name": "libertadores-cli",
   "description": "A simple CLI to get information about \"Copa Libertadores\" right in your terminal",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Federico Kauffman",
   "bin": {
     "libertadores": "./bin/run"
