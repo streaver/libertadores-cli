@@ -10,6 +10,8 @@ async function fetchDataFromConmebol() {
     timeout: 60000,
   });
 
+  await page.waitForSelector('.Opta-fixtures-list li table tbody');
+
   const parsedGames = await page.evaluate(() => {
     const elements = Array.from(
       document.querySelectorAll('.Opta-fixtures-list li table tbody')
