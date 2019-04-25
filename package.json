@@ -27,7 +27,7 @@
     "eslint": "^5.16.0",
     "prettier": "1.17.0",
     "globby": "^9",
-    "mocha": "^5",
+    "mocha": "^6",
     "nyc": "^14"
   },
   "engines": {
