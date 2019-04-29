@@ -49,7 +49,7 @@ $ npm install -g libertadores-cli
 $ libertadores COMMAND
 running command...
 $ libertadores (-v|--version|version)
-libertadores-cli/1.1.0 darwin-x64 node-v11.13.0
+libertadores-cli/1.1.1 darwin-x64 node-v11.14.0
 $ libertadores --help [COMMAND]
 USAGE
   $ libertadores COMMAND
@@ -81,7 +81,7 @@ DESCRIPTION
   - red means it is a future game
 ```
 
-_See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-cli/blob/v1.1.0/src/commands/games/all.js)_
+_See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-cli/blob/v1.1.1/src/commands/games/all.js)_
 
 ## `libertadores games:past`
 
@@ -95,7 +95,7 @@ OPTIONS
   -s, --game-site  Whether or not to show a link to the game site
 ```
 
-_See code: [src/commands/games/past.js](https://github.com/streaver/libertadores-cli/blob/v1.1.0/src/commands/games/past.js)_
+_See code: [src/commands/games/past.js](https://github.com/streaver/libertadores-cli/blob/v1.1.1/src/commands/games/past.js)_
 
 ## `libertadores games:upcoming`
 
@@ -106,7 +106,7 @@ USAGE
   $ libertadores games:upcoming
 ```
 
-_See code: [src/commands/games/upcoming.js](https://github.com/streaver/libertadores-cli/blob/v1.1.0/src/commands/games/upcoming.js)_
+_See code: [src/commands/games/upcoming.js](https://github.com/streaver/libertadores-cli/blob/v1.1.1/src/commands/games/upcoming.js)_
 
 ## `libertadores help [COMMAND]`
 
