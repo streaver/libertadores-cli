@@ -14,7 +14,7 @@
     "chalk": "^2.4.2",
     "cli-ux": "^5.3.0",
     "mock-require": "^3.0.3",
-    "puppeteer": "^1.18.0"
+    "puppeteer": "^1.18.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
