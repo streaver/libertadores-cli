@@ -49,7 +49,7 @@ $ npm install -g libertadores-cli
 $ libertadores COMMAND
 running command...
 $ libertadores (-v|--version|version)
-libertadores-cli/1.1.1 darwin-x64 node-v11.14.0
+libertadores-cli/1.2.0 darwin-x64 node-v10.15.1
 $ libertadores --help [COMMAND]
 USAGE
   $ libertadores COMMAND
@@ -73,6 +73,7 @@ USAGE
 
 OPTIONS
   -s, --game-site  Whether or not to show a link to the game site
+  -y, --year=year  [default: 2020] The year from which you want to get data. Defaults to current year
 
 DESCRIPTION
   Color coding:
@@ -81,7 +82,7 @@ DESCRIPTION
   - red means it is a future game
 ```
 
-_See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-cli/blob/v1.1.1/src/commands/games/all.js)_
+_See code: [src/commands/games/all.js](https://github.com/streaver/libertadores-cli/blob/v1.2.0/src/commands/games/all.js)_
 
 ## `libertadores games:past`
 
@@ -93,9 +94,10 @@ USAGE
 
 OPTIONS
   -s, --game-site  Whether or not to show a link to the game site
+  -y, --year=year  [default: 2020] The year from which you want to get data. Defaults to current year
 ```
 
-_See code: [src/commands/games/past.js](https://github.com/streaver/libertadores-cli/blob/v1.1.1/src/commands/games/past.js)_
+_See code: [src/commands/games/past.js](https://github.com/streaver/libertadores-cli/blob/v1.2.0/src/commands/games/past.js)_
 
 ## `libertadores games:upcoming`
 
@@ -104,9 +106,13 @@ Retrieves all the upcoming games for the "Copa Libertadores"
 ```
 USAGE
   $ libertadores games:upcoming
+
+OPTIONS
+  -s, --game-site  Whether or not to show a link to the game site
+  -y, --year=year  [default: 2020] The year from which you want to get data. Defaults to current year
 ```
 
-_See code: [src/commands/games/upcoming.js](https://github.com/streaver/libertadores-cli/blob/v1.1.1/src/commands/games/upcoming.js)_
+_See code: [src/commands/games/upcoming.js](https://github.com/streaver/libertadores-cli/blob/v1.2.0/src/commands/games/upcoming.js)_
 
 ## `libertadores help [COMMAND]`
 
@@ -123,7 +129,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.0/src/commands/help.ts)_
 <!-- commandsstop -->
 
 ## Contributing

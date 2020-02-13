@@ -1,11 +1,17 @@
 const puppeteer = require('puppeteer');
 const isPastGame = require('../utils/is-past-game');
 
-async function fetchDataFromConmebol() {
+const yearUrl = {
+  '2019': 'http://www.conmebol.com/es/copa-libertadores-2019/fixture',
+  '2020': 'http://www.conmebol.com/es/copa-libertadores-2020',
+}
+
+async function fetchDataFromConmebol(year) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  const url = yearUrl[year];
 
-  await page.goto('http://www.conmebol.com/es/copa-libertadores-2019/fixture', {
+  await page.goto(url, {
     waitUntil: 'load',
     timeout: 60000,
   });
@@ -52,18 +58,18 @@ async function fetchDataFromConmebol() {
   return parsedGames;
 }
 
-async function allGames() {
-  return fetchDataFromConmebol();
+async function allGames(year) {
+  return fetchDataFromConmebol(year);
 }
 
-async function pastGames() {
-  const gamesData = await fetchDataFromConmebol();
+async function pastGames(year) {
+  const gamesData = await fetchDataFromConmebol(year);
 
   return gamesData.filter(data => data.isHeader || isPastGame(data));
 }
 
-async function upcomingGames() {
-  const gamesData = await fetchDataFromConmebol();
+async function upcomingGames(year) {
+  const gamesData = await fetchDataFromConmebol(year);
 
   return gamesData.filter(data => data.isHeader || !isPastGame(data));
 }

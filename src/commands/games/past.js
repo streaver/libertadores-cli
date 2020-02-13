@@ -9,7 +9,7 @@ class PastCommand extends Command {
     const { flags } = this.parse(PastCommand);
 
     try {
-      const gamesData = await runWithSpinner(pastGames);
+      const gamesData = await runWithSpinner(() => pastGames(flags.year));
 
       gamesData.forEach(data => this.log(formatOutput(data, flags)));
     } catch (e) {

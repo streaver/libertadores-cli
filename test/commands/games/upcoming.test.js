@@ -28,4 +28,18 @@ describe('games:upcoming', () => {
       expect(lines[2]).to.equal('\tTeam4 () - () Team5');
       expect(lines[3]).to.equal('');
     });
+
+  test
+    .stdout()
+    .command(['games:upcoming', '--year=2020'])
+    .it("shows all games data that don't have for year 2020", ctx => {
+      const lines = ctx.stdout.split('\n');
+
+      expect(lines.length).to.equal(4);
+
+      expect(lines[0]).to.equal('Ronda 4 - jueves 18 de abril');
+      expect(lines[1]).to.equal('Ronda 5 - jueves 25 de abril');
+      expect(lines[2]).to.equal('\tTeam4 () - () Team5');
+      expect(lines[3]).to.equal('');
+    });
 });

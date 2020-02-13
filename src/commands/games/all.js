@@ -9,7 +9,7 @@ class AllCommand extends Command {
     const { flags } = this.parse(AllCommand);
 
     try {
-      const gamesData = await runWithSpinner(allGames);
+      const gamesData = await runWithSpinner(() => allGames(flags.year));
 
       gamesData.forEach(data => this.log(formatOutput(data, flags)));
     } catch (e) {
